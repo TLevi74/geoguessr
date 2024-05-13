@@ -1,0 +1,38 @@
+.headerclass{
+    background-color: rgb(136, 136, 136);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px #616161;
+    text-align: center;
+    width: 80%;
+    display: inline-block;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #acacac;
+    margin: 10px;
+}
+.headermargin{
+    margin: 10px;
+}
+.innertext{
+    background-color: rgb(226, 226, 226);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 5px 10px #9b9b9b;
+    font-size: 16px;
+    margin: 10px;
+    text-align: center;
+}
+.images{
+    border-radius: 10px !important;
+    margin: 10px !important;
+    display: inline-block;
+    width: 90% !important;
+}
+.elementor-widget-container{
+    margin: 0px !important;
+}
