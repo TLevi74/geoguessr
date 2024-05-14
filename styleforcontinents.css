@@ -1,4 +1,4 @@
-.headerclass{
+h1, h2{
     background-color: rgb(136, 136, 136) !important;
     padding: 10px !important;
     justify-content: center !important;
@@ -13,10 +13,7 @@
     margin: 10px !important;
     max-width: 40% !important;
 }
-.headermargin{
-    margin: 10px !important;
-}
-.innertext{
+p{
     background-color: rgb(226, 226, 226) !important;
     padding: 10px !important;
     justify-content: center !important;
@@ -30,26 +27,26 @@
     color: black !important;
     line-height: 130% !important;
 }
-.images{
+img{
     border-radius: 10px !important;
     margin: 10px !important;
     display: inline-block;
     max-height: 400px;
     max-width: 90% !important;
 }
-.elementor-widget-container{
-    margin: 0px !important;
-}
-.titleclass{
+.pagetitle{
     background-color: rgb(255, 153, 0) !important;
     padding: 15px !important;
+    justify-content: center !important;
+    align-items: center !important;
     border-radius: 15px !important;
     box-shadow: 0 5px 10px #664200 !important;
     text-align: center !important;
+    display: inline-block !important;
     color: #ffffff !important;
     text-shadow: 2px 2px 2px #acacac !important;
     font-weight: bold !important;
-    max-width: fit-content !important;
+    font-size: 40px;
 }
 h4{
     background-color: rgb(182, 182, 182) !important;
@@ -67,3 +64,16 @@ h4{
     font-weight: bold !important;
     width: 80% !important;
 }
+ul{
+    background-color: rgb(226, 226, 226) !important;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 5px 10px #9b9b9b !important;
+}
+ul li {
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+    font-size: 17px;
+    font-weight: bold;
+  }

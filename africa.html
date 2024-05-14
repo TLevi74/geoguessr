@@ -4,213 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
-
-<title>Africa &#8211; GeoTips</title>
+<link rel="stylesheet" href="styleforcontinents.css">
+<title>Africa</title>
 			<style type="text/css" id="ast-elementor-compatibility-css">
 				.elementor-widget-heading .elementor-heading-title {
 					margin: 0;
 				}
 			</style>
 		<meta name='robots' content='max-image-preview:large' />
-	<!-- This site uses the Google Analytics by MonsterInsights plugin v8.12.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
-						<script
-			src="//www.googletagmanager.com/gtag/js?id=UA-171259063-1"  data-cfasync="false" data-wpfc-render="false" async></script>
-		<script data-cfasync="false" data-wpfc-render="false">
-			var mi_version = '8.12.1';
-			var mi_track_user = true;
-			var mi_no_track_reason = '';
-			
-							var disableStrs = [
-														'ga-disable-UA-171259063-1',
-								];
-
-			/* Function to detect opted out users */
-			function __gtagTrackerIsOptedOut() {
-				for (var index = 0; index < disableStrs.length; index++) {
-					if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
-						return true;
-					}
-				}
-
-				return false;
-			}
-
-			/* Disable tracking if the opt-out cookie exists. */
-			if (__gtagTrackerIsOptedOut()) {
-				for (var index = 0; index < disableStrs.length; index++) {
-					window[disableStrs[index]] = true;
-				}
-			}
-
-			/* Opt-out function */
-			function __gtagTrackerOptout() {
-				for (var index = 0; index < disableStrs.length; index++) {
-					document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-					window[disableStrs[index]] = true;
-				}
-			}
-
-			if ('undefined' === typeof gaOptout) {
-				function gaOptout() {
-					__gtagTrackerOptout();
-				}
-			}
-							window.dataLayer = window.dataLayer || [];
-
-			window.MonsterInsightsDualTracker = {
-				helpers: {},
-				trackers: {},
-			};
-			if (mi_track_user) {
-				function __gtagDataLayer() {
-					dataLayer.push(arguments);
-				}
-
-				function __gtagTracker(type, name, parameters) {
-					if (!parameters) {
-						parameters = {};
-					}
-
-					if (parameters.send_to) {
-						__gtagDataLayer.apply(null, arguments);
-						return;
-					}
-
-					if (type === 'event') {
-						
-													parameters.send_to = monsterinsights_frontend.ua;
-						__gtagDataLayer(type, name, parameters);
-												} else {
-						__gtagDataLayer.apply(null, arguments);
-					}
-				}
-
-				__gtagTracker('js', new Date());
-				__gtagTracker('set', {
-					'developer_id.dZGIzZG': true,
-										});
-														__gtagTracker('config', 'UA-171259063-1', {"forceSSL":"true","link_attribution":"true"} );
-									window.gtag = __gtagTracker;										(function () {
-					/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
-					/* ga and __gaTracker compatibility shim. */
-					var noopfn = function () {
-						return null;
-					};
-					var newtracker = function () {
-						return new Tracker();
-					};
-					var Tracker = function () {
-						return null;
-					};
-					var p = Tracker.prototype;
-					p.get = noopfn;
-					p.set = noopfn;
-					p.send = function () {
-						var args = Array.prototype.slice.call(arguments);
-						args.unshift('send');
-						__gaTracker.apply(null, args);
-					};
-					var __gaTracker = function () {
-						var len = arguments.length;
-						if (len === 0) {
-							return;
-						}
-						var f = arguments[len - 1];
-						if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
-							if ('send' === arguments[0]) {
-								var hitConverted, hitObject = false, action;
-								if ('event' === arguments[1]) {
-									if ('undefined' !== typeof arguments[3]) {
-										hitObject = {
-											'eventAction': arguments[3],
-											'eventCategory': arguments[2],
-											'eventLabel': arguments[4],
-											'value': arguments[5] ? arguments[5] : 1,
-										}
-									}
-								}
-								if ('pageview' === arguments[1]) {
-									if ('undefined' !== typeof arguments[2]) {
-										hitObject = {
-											'eventAction': 'page_view',
-											'page_path': arguments[2],
-										}
-									}
-								}
-								if (typeof arguments[2] === 'object') {
-									hitObject = arguments[2];
-								}
-								if (typeof arguments[5] === 'object') {
-									Object.assign(hitObject, arguments[5]);
-								}
-								if ('undefined' !== typeof arguments[1].hitType) {
-									hitObject = arguments[1];
-									if ('pageview' === hitObject.hitType) {
-										hitObject.eventAction = 'page_view';
-									}
-								}
-								if (hitObject) {
-									action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
-									hitConverted = mapArgs(hitObject);
-									__gtagTracker('event', action, hitConverted);
-								}
-							}
-							return;
-						}
-
-						function mapArgs(args) {
-							var arg, hit = {};
-							var gaMap = {
-								'eventCategory': 'event_category',
-								'eventAction': 'event_action',
-								'eventLabel': 'event_label',
-								'eventValue': 'event_value',
-								'nonInteraction': 'non_interaction',
-								'timingCategory': 'event_category',
-								'timingVar': 'name',
-								'timingValue': 'value',
-								'timingLabel': 'event_label',
-								'page': 'page_path',
-								'location': 'page_location',
-								'title': 'page_title',
-							};
-							for (arg in args) {
-																	if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
-									hit[gaMap[arg]] = args[arg];
-								} else {
-									hit[arg] = args[arg];
-								}
-							}
-							return hit;
-						}
-
-						try {
-							f.hitCallback();
-						} catch (ex) {
-						}
-					};
-					__gaTracker.create = newtracker;
-					__gaTracker.getByName = newtracker;
-					__gaTracker.getAll = function () {
-						return [];
-					};
-					__gaTracker.remove = noopfn;
-					__gaTracker.loaded = true;
-					window['__gaTracker'] = __gaTracker;
-				})();
-								} else {
-									console.log("");
-				(function () {
-					function __gtagTracker() {
-						return null;
-					}
-
-					window['__gtagTracker'] = __gtagTracker;
-					window['gtag'] = __gtagTracker;
-				})();
-								}
-		</script>
-			<!-- / Google Analytics by MonsterInsights -->
 	<link rel='stylesheet' id='astra-theme-css-css' href='https://geotips.net/wp-content/themes/astra/assets/css/minified/style.min.css?ver=2.4.5' media='all' />
 <style id='astra-theme-css-inline-css'>
 html{font-size:93.75%;}a,.page-title{color:#0274be;}a:hover,a:focus{color:#3a3a3a;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;font-weight:inherit;font-size:15px;font-size:1rem;}blockquote{color:#000000;}.site-title{font-size:35px;font-size:2.3333333333333rem;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.6666666666667rem;}.site-header .site-description{font-size:15px;font-size:1rem;}.entry-title{font-size:40px;font-size:2.6666666666667rem;}.comment-reply-title{font-size:24px;font-size:1.6rem;}.ast-comment-list #cancel-comment-reply-link{font-size:15px;font-size:1rem;}h1,.entry-content h1{font-size:40px;font-size:2.6666666666667rem;}h2,.entry-content h2{font-size:30px;font-size:2rem;}h3,.entry-content h3{font-size:25px;font-size:1.6666666666667rem;}h4,.entry-content h4{font-size:20px;font-size:1.3333333333333rem;}h5,.entry-content h5{font-size:18px;font-size:1.2rem;}h6,.entry-content h6{font-size:15px;font-size:1rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:2rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:15px;font-size:1rem;}::selection{background-color:#0274be;color:#ffffff;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.wc-block-grid__product-title{color:#3a3a3a;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#ffffff;border-color:#0274be;background-color:#0274be;}.main-header-menu a,.ast-header-custom-item a{color:#3a3a3a;}.main-header-menu li:hover > a,.main-header-menu li:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu li.focus > a,.main-header-menu li.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > a,.main-header-menu .current-menu-ancestor > a,.main-header-menu .current_page_item > a,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle,.main-header-menu .current_page_item > .ast-menu-toggle{color:#0274be;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#0274be;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#0274be;background-color:#0274be;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#0274be;border-color:#0274be;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.ast-comment-meta{line-height:1.666666667;font-size:12px;font-size:0.8rem;}.single .nav-links .nav-previous,.single .nav-links .nav-next,.single .ast-author-details .author-title,.ast-comment-meta{color:#0274be;}.entry-meta,.entry-meta *{line-height:1.45;color:#0274be;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *{color:#3a3a3a;}.ast-404-layout-1 .ast-404-text{font-size:200px;font-size:13.333333333333rem;}.widget-title{font-size:21px;font-size:1.4rem;color:#3a3a3a;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#0274be;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#0274be;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#0274be;border-color:#0274be;}.calendar_wrap #today > a{color:#ffffff;}.ast-pagination a,.page-links .page-link,.single .post-navigation a{color:#0274be;}.ast-pagination a:hover,.ast-pagination a:focus,.ast-pagination > span:hover:not(.dots),.ast-pagination > span.current,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#3a3a3a;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#0274be;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #0274be;color:#0274be;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#0274be;}@media (min-width:1200px){.ast-separate-container.ast-right-sidebar .entry-content .wp-block-image.alignfull,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-image.alignfull,.ast-separate-container.ast-right-sidebar .entry-content .wp-block-cover.alignfull,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-cover.alignfull{margin-left:-6.67em;margin-right:-6.67em;max-width:unset;width:unset;}.ast-separate-container.ast-right-sidebar .entry-content .wp-block-image.alignwide,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-image.alignwide,.ast-separate-container.ast-right-sidebar .entry-content .wp-block-cover.alignwide,.ast-separate-container.ast-left-sidebar .entry-content .wp-block-cover.alignwide{margin-left:-20px;margin-right:-20px;max-width:unset;width:unset;}.wp-block-group .has-background{padding:20px;}}@media (max-width:921px){#secondary.secondary{padding-top:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary{margin-top:1.5em;}.ast-page-builder-template #secondary{margin-top:1.5em;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}.ast-pagination{padding-top:1.5em;text-align:center;}.ast-pagination .next.page-numbers{display:inherit;float:none;}}@media (max-width:921px){.ast-page-builder-template.ast-left-sidebar #secondary{padding-right:20px;}.ast-page-builder-template.ast-right-sidebar #secondary{padding-left:20px;}.ast-right-sidebar #primary{padding-right:0;}.ast-right-sidebar #secondary{padding-left:0;}.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}.ast-pagination .prev.page-numbers{padding-left:.5em;}.ast-pagination .next.page-numbers{padding-right:.5em;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}.ast-author-box{-js-display:flex;display:flex;}.ast-author-bio{flex:1;}.error404.ast-separate-container #primary,.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:922px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}}.wp-block-button .wp-block-button__link,{color:#ffffff;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#0274be;background-color:#0274be;color:#ffffff;font-family:inherit;font-weight:inherit;line-height:1;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#0274be;background-color:#0274be;border-radius:2px;padding-top:10px;padding-right:40px;padding-bottom:10px;padding-left:40px;font-family:inherit;font-weight:inherit;line-height:1;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}@media (min-width:921px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}}@media (max-width:544px){.ast-comment-list .children{margin-left:0.66666em;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:921px){.ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:0;}.ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:-1em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}@media (max-width:544px){.ast-separate-container .comment-respond{padding:1.5em 1em;}}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation{max-width:1240px;margin-left:auto;margin-right:auto;}}@media (max-width:921px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:30px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:921px){html{font-size:85.5%;}}@media (max-width:544px){html{font-size:85.5%;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://geotips.net/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://geotips.net/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://geotips.net/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:921px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .children,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#0274be;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .children{border-top-width:2px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .children .children{top:-2px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu a,.ast-desktop .main-header-menu.submenu-with-border .children a{border-bottom-width:0px;border-style:solid;border-color:#eaeaea;}@media (min-width:922px){.main-header-menu .sub-menu li.ast-left-align-sub-menu:hover > ul,.main-header-menu .sub-menu li.ast-left-align-sub-menu.focus > ul{margin-left:-0px;}}.ast-small-footer{border-top-style:solid;border-top-width:1px;border-top-color:#7a7a7a;}.ast-small-footer-wrap{text-align:center;}@media (max-width:920px){.ast-404-layout-1 .ast-404-text{font-size:100px;font-size:6.6666666666667rem;}}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}.ast-header-break-point .main-header-bar{border-bottom-width:1px;}@media (min-width:922px){.main-header-bar{border-bottom-width:1px;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item, .ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > a{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.ast-primary-menu-disabled .main-header-bar .ast-masthead-custom-menu-items{flex:unset;}
@@ -289,37 +90,17 @@ class="hfeed site" id="page">
 		class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope"			>
 			<div class="ast-site-title-wrap">
 					<span class="site-title" itemprop="name">
-			<a href="https://geotips.net/" rel="home" itemprop="url" >
-				GeoTips
-			</a>
+						<a href="index.html" rel="home" itemprop="url" class="pagetitle">
+							🗺 Geoguessr Tips 🗺
+						</a>
 		</span>
 					
 				</div>			</div>
 	</div>
-
-	<!-- .site-branding -->
-			<div class="ast-mobile-menu-buttons">
-
-		
-				<div class="ast-button-wrap">
-		<button type="button" class="menu-toggle main-header-menu-toggle  ast-mobile-menu-buttons-minimal "  aria-controls='primary-menu' aria-expanded='false'>
-			<span class="screen-reader-text">Main Menu</span>
-			<span class="menu-toggle-icon"></span>
-						</button>
-	</div>
 		
 		
 	</div>
-		<div class="ast-main-header-bar-alignment"><div class="main-header-bar-navigation"><nav class="ast-flex-grow-1 navigation-accessibility" id="site-navigation" aria-label="Site Navigation" itemtype="https://schema.org/SiteNavigationElement" itemscope="itemscope"><div class="main-navigation"><ul id="primary-menu" class="main-header-menu ast-nav-menu ast-flex ast-justify-content-flex-end  submenu-with-border astra-menu-animation-fade "><li id="menu-item-4154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4154"><a href="https://geotips.net/world-records/">World Records</a></li>
-<li id="menu-item-4189" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4189"><a href="https://geotips.net/geotips-monthly-league/">GeoTips Monthly League</a></li>
-<li id="menu-item-4155" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4155"><a href="https://geotips.net/resources/">Resources</a></li>
-<li id="menu-item-4156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4156"><a href="https://geotips.net/europe/">Europe</a></li>
-<li id="menu-item-4157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4157"><a href="https://geotips.net/asia/">Asia</a></li>
-<li id="menu-item-4158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4158"><a href="https://geotips.net/south-america/">South America</a></li>
-<li id="menu-item-4159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4159"><a href="https://geotips.net/oceania/">Oceania</a></li>
-<li id="menu-item-4160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4160"><a href="https://geotips.net/north-america/">North America</a></li>
-<li id="menu-item-4161" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-235 current_page_item menu-item-4161"><a href="https://geotips.net/africa/" aria-current="page">Africa</a></li>
-</ul></div></nav></div></div>			</div><!-- Main Header Container -->
+		</div><!-- Main Header Container -->
 	</div><!-- ast-row -->
 		</div> <!-- Main Header Bar -->
 </div> <!-- Main Header Bar Wrap -->
@@ -416,29 +197,6 @@ class="post-235 page type-page status-publish ast-article-single" id="post-235" 
 
 	
 	
-	
-	<footer
-		class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon"		>
-
-		
-		
-<div class="ast-small-footer footer-sml-layout-1">
-<div class="ast-footer-overlay">
-	<div class="ast-container">
-		<div class="ast-small-footer-wrap" >
-								<div class="ast-small-footer-section ast-small-footer-section-1" >
-					Copyright &copy; 2024 <span class="ast-footer-site-title">GeoTips</span> | Powered by <a href="https://wpastra.com/">Astra WordPress Theme</a>					</div>
-			
-			
-		</div><!-- .ast-row .ast-small-footer-wrap -->
-	</div><!-- .ast-container -->
-</div><!-- .ast-footer-overlay -->
-</div><!-- .ast-small-footer-->
-
-		
-	</footer><!-- #colophon -->
-	
-	
 </div><!-- #page -->
 
 
@@ -471,8 +229,7 @@ class="post-235 page type-page status-publish ast-article-single" id="post-235" 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/south-africa/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/south-africa/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Bloemfontein/Cape Town/Pretoria</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>Not all places in South Africa have Gen 2 coverage, but if you know you&#8217;re in the Southern Africa region and you end up with Gen 2 coverage, it has to be South Africa.<br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/Ic0rpII.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/Ic0rpII.jpg" data-eio="l"></noscript><br />
@@ -502,7 +259,7 @@ There are some large sections that do not contain street view, especially in the
 You will see these vans everywhere. They have a South African flag on the side with a nice design. They are in every city, and I believe they are like Taxi&#8217;s.</p>
 <h4 id="9">Camera Generation:</h4>
 <h2 style="color:red">Gen 2 and 3</h2>
-<p></br></p>
+</br>
 <h4 id="10">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/Ic0rpII.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/Ic0rpII.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/sjhxWCY.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/sjhxWCY.jpg" data-eio="l"></noscript><br />
@@ -560,7 +317,7 @@ South Africa uses the English and Afrikaans language. Afrikaans is very similar 
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/south_africa.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/south_africa.jpg" data-eio="l"></noscript></p>
 <h4 id="22">Domain:</h4>
 <h2 style="color:red">.za (Zuid-Afrika)</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="BW" data-content-type="regions" data-content-index="1" class="igm-map-content" id="bw_231"><h2>Botswana</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -586,8 +343,7 @@ South Africa uses the English and Afrikaans language. Afrikaans is very similar 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/botswana/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/botswana/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Gaborone</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>Botswana is incredibly remote and rural. Even their capital city of Gaborone feels empty. The combination of Gen 3 coverage and rural locations that are flat are a good sign you&#8217;re in Botswana.<br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/3RUc7D9.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/3RUc7D9.jpg" data-eio="l"></noscript><br /><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/04/Botswana-landscape-1.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/04/Botswana-landscape-1.jpg" data-eio="l"></noscript><br />
@@ -615,8 +371,7 @@ There is a lot of open space in Botswana. If you keep to the main roads (A1, A2 
 Like most of the African Continent, we have these vans. They don&#8217;t seem to have a pattern, but some have a yellow stripe on the bottom portion of the sides.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/3RUc7D9.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/3RUc7D9.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/bywCAOE.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/bywCAOE.jpg" data-eio="l"></noscript><br />
@@ -655,7 +410,7 @@ There seems to be a lot of Brick houses, as well as these plaster houses.</p>
 <p>There are two official languages of Botswana. English and Tswana. However, English is the official written language, meaning all signs will be English.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.bw</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="NG" data-content-type="regions" data-content-index="2" class="igm-map-content" id="ng_231"><h2>Nigeria</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -684,8 +439,7 @@ There seems to be a lot of Brick houses, as well as these plaster houses.</p>
 </p>
 <h4 id="2">Capital City:</h4>
 <h2>Abuja</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>The Google car or the follow car is the most useful. Learning the Meta here is very useful.<br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/OopuRNA.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/OopuRNA.png" data-eio="l"></noscript><br />
@@ -758,8 +512,7 @@ Enugu uses a yellow car with two black stripes. The stripes appear to be lower t
 Ibadan uses a Burnt red / brown and yellow taxi. The bottom half is the burnt red / brown while the top half is yellow.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Nigeria-White-Divider-Line.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Nigeria-White-Divider-Line.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Nigeria-Dashed-White-Line.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Nigeria-Dashed-White-Line.jpg" data-eio="l"></noscript><br />
@@ -856,8 +609,7 @@ The middle of the country has this damper feel<br />
 The South of the country is generally more tropical. It tends to have palm trees and other tropical foliage.</p>
 <h4 id="17">Domain:</h4>
 <h2 style="color:red">.ng</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="18">Language:</h4>
 <p>Nigeria uses the English Language for most of its official signs. There are other native languages, but you wont see them on street view</p>
 </div><div data-original-id="GH" data-content-type="regions" data-content-index="3" class="igm-map-content" id="gh_231"><h2>Ghana</h2>
@@ -886,8 +638,7 @@ The South of the country is generally more tropical. It tends to have palm trees
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/ghana/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/ghana/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Accra</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>The Front Right roof-rack bar has black duct tape on it. There is only one other country / territory that has tape on the bar. Learning the tape meta can help you figure out that you&#8217;re in Ghana.</p>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/iaA5U0s.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/iaA5U0s.png" data-eio="l"></noscript></p>
@@ -921,8 +672,7 @@ There are not a lot of roads covered in Ghana. Stick to the main roads and you s
 You can find the same vans as most of Central Africa. However, the first taxi seems to be a bit more common.</p>
 <h4 id="9">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="10">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Ghana-Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Ghana-Road-Lines.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Ghana-Solid-White.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Ghana-Solid-White.jpg" data-eio="l"></noscript><br />
@@ -968,8 +718,7 @@ You can find this near the south of Ghana. It feels very green and can be a good
 This is the North of the Country. It is definitely a bit more dry than the others.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.gh</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="19">Language:</h4>
 <p>Ghana uses the English Language on all of their signs.</p>
 </div><div data-original-id="SN" data-content-type="regions" data-content-index="4" class="igm-map-content" id="sn_231"><h2>Senegal</h2>
@@ -998,8 +747,7 @@ This is the North of the Country. It is definitely a bit more dry than the other
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/senegal/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/senegal/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Dakar</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/js4rOFa.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/js4rOFa.png" data-eio="l"></noscript><br />
 Senegal has what the community calls &#8220;Rifts&#8221; located all around. They are clearly visible in the majority of the locations, but &#8220;rift less&#8221; locations are possible, mostly in Dakar. Try moving to see if you can find some rifts to confirm it is Senegal.<br />
@@ -1047,8 +795,7 @@ Touba on the other hand, doesn&#8217;t use this paint job. It often features tax
 >br></p>
 <h4 id="9">Camera Generation:</h4>
 <h2 style="color:red">Gen 3 and 4</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="10">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/16bUzX1.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/16bUzX1.png" data-eio="l"></noscript><br />
 Pretty typical country road, with dashed white lines marking the center divider as well as the shoulders. There are roads that don&#8217;t fit this look, but this is very common.<br />
@@ -1100,7 +847,7 @@ Notice the Rifts and the road markings. If you don&#8217;t end up in a town or a
 Senegal uses your typical French alphabet for the majority of all road signs. There are 36 languages in Senegal, but these languages are not represented well on street view.</p>
 <h4 id="19">Domain:</h4>
 <h2 style="color:red">.sn</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="KE" data-content-type="regions" data-content-index="5" class="igm-map-content" id="ke_231"><h2>Kenya</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1129,8 +876,7 @@ Senegal uses your typical French alphabet for the majority of all road signs. Th
 </p>
 <h4 id="2">Capital City:</h4>
 <h2>Nairobi</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2022/10/Kenya-new-coverage.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2022/10/Kenya-new-coverage.png" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2022/10/Kenya-New-Car.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2022/10/Kenya-New-Car.jpg" data-eio="l"></noscript><br />
@@ -1188,8 +934,7 @@ These bollards were found in Mombassa. There were also some black and white boll
 Most of the coverage in Kenya is located near the South of the Country.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3 and 4</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/06/chrome_t68wx0VMCb.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/06/chrome_t68wx0VMCb.png" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Kenya-Solid-Yellow.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Kenya-Solid-Yellow.jpg" data-eio="l"></noscript><br />
@@ -1237,7 +982,7 @@ This is the western area of Kenya. There is a lake in this area, and it feels pr
 Kenya has two official languages, English and Swahili. You will find English most commonly on signs and buildings.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.ke</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="UG" data-content-type="regions" data-content-index="6" class="igm-map-content" id="ug_231"><h2>Uganda</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1262,7 +1007,7 @@ Kenya has two official languages, English and Swahili. You will find English mos
 </p>
 <h4 id="2">Capital City:</h4>
 <h2>Kampala</h2>
-<p></br></p>
+</br>
 <h3 id="3">Most Helpful:</h3>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/YATb7bP.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/YATb7bP.jpg" data-eio="l"></noscript><br />
 The most useful piece of information in Uganda is the Google Car. This is the most common car, and can only be found between Kampala and Entebee. There are some Rare cars worth learning too.<br />
@@ -1289,8 +1034,7 @@ If there is a pin, there is official coverage. There is one pin per area. A lot 
 Uganda has these vans that they use as taxi&#8217;s. They can be different colors, but the white and the light blue seem to be the most common. Regardless, the pattern that appears midway through the car can be found on nearly all of them, and can be seen on busses around the city. There are other companies that appear to use these vans without the pattern.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/02/Uganda-Road-lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/02/Uganda-Road-lines.jpg" data-eio="l"></noscript><br />
 Road lines are not common in Uganda, but will be all white if you do find them. The only paved roads in Uganda are in the Kampala &#8211; Entebee region.</p>
@@ -1332,7 +1076,7 @@ Uganda has very reddish / orange soil, however there are places where it can be 
 There are a variety of houses all around Uganda, and these are just some examples of them. Check back to the Most Useful section at the top for the most important tips and tricks.</p>
 <h4 id="16">Domain:</h4>
 <h2 style="color:red">.ug</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="TZ" data-content-type="regions" data-content-index="7" class="igm-map-content" id="tz_231"><h2>Tanzania</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1349,8 +1093,7 @@ There are a variety of houses all around Uganda, and these are just some example
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/tanzania/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/tanzania/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Dodoma</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/kNuP2mL.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/kNuP2mL.png" data-eio="l"></noscript><br />
 As the other areas in Tanzania are impossible to pinpoint, knowing the Mt. Kilimanjaro area is important. There is a chance to find places around this mountain as it is a noticeable feature.</p>
@@ -1365,8 +1108,7 @@ As the other areas in Tanzania are impossible to pinpoint, knowing the Mt. Kilim
 There isnt much coverage in Tanzania. Recognizing Mt. Kilimanjaro is essential. However, most map creators tend to stay away from Trekkers in their maps.</p>
 <h4 id="6">Camera Generation:</h4>
 <h2 style="color:red">Gen 3 Trekker</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="7">Vegetation/Landscape:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/diR9hye.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/diR9hye.png" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/04/Tanzania-Landscape-2.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/04/Tanzania-Landscape-2.jpg" data-eio="l"></noscript><br />
@@ -1382,7 +1124,7 @@ It&#8217;s very hilly, and you are usually surrounded by dense foliage. However,
 There is also boat coverage, going the length of the national park listed above. It&#8217;s clear you&#8217;re on a boat even if you can&#8217;t see the boat.</p>
 <h4 id="9">Domain:</h4>
 <h2 style="color:red">.tz</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="TN" data-content-type="regions" data-content-index="8" class="igm-map-content" id="tn_231"><h2>Tunisia</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1408,8 +1150,7 @@ There is also boat coverage, going the length of the national park listed above.
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/tunisia/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/tunisia/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Tunis</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>Tunisia has a follow car (and is almost always seen). There are a few of these cars and they have a clear divider between North and South at Hammamet Sud. That general area has both cars, often one car going north and the other going south.<br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/X8mrozW.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/X8mrozW.png" data-eio="l"></noscript><br />
@@ -1448,8 +1189,7 @@ These KM markers can be found on the sides of the major roads. They often point 
 A super important detail is that ALL of the official coverage exists on the eastern coast between Bizerte and Djerba. The only place that isnt on the coast is Kairouan along P12.</p>
 <h4 id="9">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="10">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Tunisia-Road-Lines-1.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Tunisia-Road-Lines-1.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Tunisia-road-lines-2.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Tunisia-road-lines-2.jpg" data-eio="l"></noscript><br />
@@ -1499,7 +1239,7 @@ These area codes were taken from Wikipedia, but give a good idea of the numbers 
 Tunisia uses a typical French alphabet, as well as arabic.</p>
 <h4 id="19">Domain:</h4>
 <h2 style="color:red">.tn</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="MG" data-content-type="regions" data-content-index="9" class="igm-map-content" id="mg_231"><h2>Madagascar</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1524,8 +1264,7 @@ Tunisia uses a typical French alphabet, as well as arabic.</p>
 The black border is only on this image to make it easier to see the white section of the flag.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Antananarivo</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>Most map creators don&#8217;t like adding Boat or Trekker views into their maps. If you are playing Official maps, you will need to know the boats shown below. If you are playing player made maps, learning the rare cars is more than enough 95% of the time.<br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/7FwB7ZB.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/7FwB7ZB.png" data-eio="l"></noscript><br />
@@ -1581,8 +1320,7 @@ This vehicle is only located on a small stretch of the RN8 road. Its located in 
 This Ox cart can only be found on a small stretch of land. Its only in the circled section.</p>
 <h4 id="6">Camera Generation:</h4>
 <h2 style="color:red">Gen 3 Trekker, Boat and Car</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="7">Electricity poles:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/I8KUqR6.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/I8KUqR6.png" data-eio="l"></noscript><br />
 These are located in the larger cities covered by Trekkers. You will not find them in most of the locations covered on Street view.</p>
@@ -1617,7 +1355,7 @@ You can find them on the West Coast east of Morondava on RN8 (Near the place the
 Madagascar uses your typical French alphabet as well as the native language Malagasy. However, there were no good examples of the later on street view .</p>
 <h4 id="16">Domain:</h4>
 <h2 style="color:red">.mg</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="EG" data-content-type="regions" data-content-index="10" class="igm-map-content" id="eg_231"><h2>Egypt</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1638,8 +1376,7 @@ Madagascar uses your typical French alphabet as well as the native language Mala
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/egypt/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/egypt/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Cairo</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p>Egypt is really easy to figure out. Nearly all of the maps will have the Pyramids somewhere in the background. A lot of World maps dont use Trekker coverage, so its mostly Battle Royale or Official maps that will contain the coverage.<br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/y7WWy7I.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/y7WWy7I.png" data-eio="l"></noscript><br />
@@ -1667,8 +1404,7 @@ This guy in the skull shirt can be found at two of the locations in Giza. The on
 You also seem to have a police escort in most of the areas, including at the Pyramids.</p>
 <h4 id="7">Camera Generation:</h4>
 <h2 style="color:red">Gen 3 Trekker</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="8">Electricity / Light Poles:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Egypt-Pole-1.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Egypt-Pole-1.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/03/Egypt-Pole-2.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/03/Egypt-Pole-2.jpg" data-eio="l"></noscript></p>
@@ -1697,7 +1433,7 @@ Its clearly different from the other coverage. Its also the only coverage near a
 As there is limited coverage and its mostly near prominent locations, you will see some signs with Arabic and English.</p>
 <h4 id="13">Domain:</h4>
 <h2 style="color:red">.eg</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="LS" data-content-type="regions" data-content-index="11" class="igm-map-content" id="ls_231"><h2>Lesotho</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1723,8 +1459,7 @@ As there is limited coverage and its mostly near prominent locations, you will s
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://cdn.countryflags.com/thumbs/lesotho/flag-800.png" decoding="async" class="lazyload"><noscript><img src="https://cdn.countryflags.com/thumbs/lesotho/flag-800.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Maseru</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/OjL9NVj.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/OjL9NVj.png" data-eio="l"></noscript></p>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/geAywpP.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/geAywpP.png" data-eio="l"></noscript></p>
@@ -1748,8 +1483,7 @@ Bollards are extremely rare in Lesotho but they are these white rectangular pole
 These sticks are also found around a lot of the dirt roads / construction sites.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/KRSGPWK.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/KRSGPWK.png" data-eio="l"></noscript><br />
 Lesotho has yellow lines on the sides and white in the middle, much like the entire southern Africa region.</p>
@@ -1825,8 +1559,7 @@ You will occasionally see the South Africa domain, .ZA, while in Lesotho.<br /><
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Eswatini.svg/800px-Flag_of_Eswatini.svg.png" decoding="async" class="lazyload"><noscript><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Flag_of_Eswatini.svg/800px-Flag_of_Eswatini.svg.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Mbabane/Lobamba</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Disclaimer:</h4>
 <p>Eswatini changed their name from Swaziland to Eswatini in 2018. There are still plenty of signs around that still say Swaziland around the country. Their domain is based on when the country was called Swaziland.</p>
 <h4 id="4">Most Helpful:</h4>
@@ -1849,8 +1582,7 @@ There isnt a lot of coverage in Eswatini. Most of the major roads as well as mos
 Like most of Africa, Eswatini uses these vans for their taxis. Unlike most other countries, there really isn&#8217;t a method to the pattern on the sides.</p>
 <h4 id="9">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="10">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/10/bjk8vXq.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/10/bjk8vXq.png" data-eio="l"></noscript><br />
 There are some pretty unique lines in Eswatini. Its the same general lines you&#8217;d see in the general region of Southern Africa.<br />
@@ -1909,7 +1641,7 @@ Eswatini feels like South Africa, but has a lot of hills/mountains. Its usually 
 <p>Eswatini uses the Swazi language, as well as English. Swazi is a little different and has different dialects in the four major regions.</p>
 <h4 id="19">Domain:</h4>
 <h2 style="color:red">.sz</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="RE" data-content-type="regions" data-content-index="13" class="igm-map-content" id="re_231"><h2>Reunion (Island)</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -1936,8 +1668,7 @@ Eswatini feels like South Africa, but has a lot of hills/mountains. Its usually 
 Because Reunion is a French Territory, you will find a French Flag almost everywhere. However, they have their own flag as well.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Saint Denis</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Front-Car.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Front-Car.jpg" data-eio="l"></noscript><br />
 (Front)<br />
@@ -1969,8 +1700,7 @@ Cilaos<br />
 This is not saying that all of the other towns are not important. Just that these are the larger cities (or the unique ones in the hills).</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Road-Lines.jpg" data-eio="l"></noscript><br />
 Reunion uses white dashed lines for the middle and shoulders.</p>
@@ -2016,7 +1746,7 @@ Reunion feels like a tropical France. It has the palm trees and feelings of an I
 Reunion, being a territory of France, uses a typical French Alphabet.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.re</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="ES" data-content-type="regions" data-content-index="14" class="igm-map-content" id="es_231"><h2>Canary Islands</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -2045,8 +1775,7 @@ The Canary islands are owned by Spain. Therefore, you will see a Spain flag near
 There is a flag specifically for the Canary Islands however.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Municipality of Las Palmas/Santa Cruz de Tenerife</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/04/Canary-Trash-Can.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/04/Canary-Trash-Can.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/04/Canary-Landscape-1.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/04/Canary-Landscape-1.jpg" data-eio="l"></noscript><br />
@@ -2074,8 +1803,7 @@ While it may look like everything has coverage, the Canary Islands only have the
 Like most of Spain, the trash and recycle cans are unique. They usually have a city crest or something similar on most of their cans. You can actually see a crest that says Las Palma on the blue bin.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 2, 3, and 4.</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Canary-Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Canary-Road-Lines.jpg" data-eio="l"></noscript><br />
 The Canary Islands use all white road markings. There are some cases where there may be a yellow line near curbs, but that seems to be more rare than the white lines.</p>
@@ -2118,7 +1846,7 @@ You can clearly tell you&#8217;re on an island for most of the Canaries. You can
 The Canary Islands, a territory of Spain, use the Spanish language.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.ic &#038; .es</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="PT" data-content-type="regions" data-content-index="15" class="igm-map-content" id="pt_231"><h2>Madeira</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -2145,8 +1873,7 @@ The Canary Islands, a territory of Spain, use the Spanish language.</p>
 Madeira is an Island that is owned by Portugal. While they do have their own flag, you should also be on the lookout for the Portuguese flag.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Funchal</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgIAAABoAQAAAACrzqV0AAAAAnRSTlMAAHaTzTgAAAAeSURBVFjD7cExAQAAAMKg9U9tDQ+gAAAAAAAA4NcAGtAAAfByTE0AAAAASUVORK5CYII=" data-src="https://geotips.net/wp-content/uploads/2020/11/uMR4aYZ.jpg" decoding="async" class="lazyload"><noscript><img src="https://geotips.net/wp-content/uploads/2020/11/uMR4aYZ.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Coast-GF.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Coast-GF.jpg" data-eio="l"></noscript><br />
@@ -2181,8 +1908,7 @@ Estreito da Calheta<br />
 Knowing these towns and where they exist on the island can help you decide between the East or the West. Most signs will contain Funchal.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 2, 3 and 4</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Road-Lines.jpg" data-eio="l"></noscript><br />
 Madeira, much like Portugal, uses white lines in the middle and on the sides. There doesn&#8217;t have to be a double white line, with some places having a single white line or a dashed line.</p>
@@ -2230,7 +1956,7 @@ The East coast feels a bit more dry and not as lush as other parts of the island
 Madeira uses the Portuguese language.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.pt</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="RW" data-content-type="regions" data-content-index="16" class="igm-map-content" id="rw_231"><h2>Rwanda</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -2256,8 +1982,7 @@ Madeira uses the Portuguese language.</p>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Flag.png" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Flag.png" data-eio="l"></noscript></p>
 <h4 id="2">Capital City:</h4>
 <h2>Kigali</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Car.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Car.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Car-Back.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Car-Back.jpg" data-eio="l"></noscript><br />
@@ -2278,8 +2003,7 @@ Rwanda has extremely limited coverage which should make it easy to get a decent 
 Its not necessarily unique or rare, but it seems like the majority of people riding motorcycles has this red vest (and occasionally a helmet). It logo says Airtel and what looks like Money.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 4</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2022/10/Rwanda-Lines.jpg" data-eio="l"></noscript><br />
 Rwanda uses a single yellow center line and white side lines. The center line can be solid or dashed depending on how popular a certain road is.</p>
@@ -2317,7 +2041,7 @@ There are a lot of red clay roof&#8217;s around Rwanda. You can find other color
 There are FOUR official languages of Rwanda (Kinyarwanda, English, French and Swahili). There are realistically two important ones. Kinyarwanda (shown above) can be found on a bunch of signs, as well as English which can also be found sparingly around Rwanda. French is being reduced across the country, while Swahili is being brought in after a 2019 decision to bring the country closer to its historical roots.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.rw</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="Reunion" data-content-type="roundMarkers" data-content-index="0" class="igm-map-content" id="reunion_231"><h2>Reunion (Island)</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -2344,8 +2068,7 @@ There are FOUR official languages of Rwanda (Kinyarwanda, English, French and Sw
 Because Reunion is a French Territory, you will find a French Flag almost everywhere. However, they have their own flag as well.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Saint Denis</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Front-Car.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Front-Car.jpg" data-eio="l"></noscript><br />
 (Front)<br />
@@ -2377,8 +2100,7 @@ Cilaos<br />
 This is not saying that all of the other towns are not important. Just that these are the larger cities (or the unique ones in the hills).</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 3</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Road-Lines.jpg" data-eio="l"></noscript><br />
 Reunion uses white dashed lines for the middle and shoulders.</p>
@@ -2424,7 +2146,7 @@ Reunion feels like a tropical France. It has the palm trees and feelings of an I
 Reunion, being a territory of France, uses a typical French Alphabet.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.re</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="Canary Islands" data-content-type="roundMarkers" data-content-index="1" class="igm-map-content" id="canaryislands_231"><h2>Canary Islands</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -2453,8 +2175,7 @@ The Canary islands are owned by Spain. Therefore, you will see a Spain flag near
 There is a flag specifically for the Canary Islands however.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Municipality of Las Palmas/Santa Cruz de Tenerife</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/04/Canary-Trash-Can.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/04/Canary-Trash-Can.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2021/04/Canary-Landscape-1.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2021/04/Canary-Landscape-1.jpg" data-eio="l"></noscript><br />
@@ -2482,8 +2203,7 @@ While it may look like everything has coverage, the Canary Islands only have the
 Like most of Spain, the trash and recycle cans are unique. They usually have a city crest or something similar on most of their cans. You can actually see a crest that says Las Palma on the blue bin.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 2, 3, and 4.</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Canary-Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Canary-Road-Lines.jpg" data-eio="l"></noscript><br />
 The Canary Islands use all white road markings. There are some cases where there may be a yellow line near curbs, but that seems to be more rare than the white lines.</p>
@@ -2526,7 +2246,7 @@ You can clearly tell you&#8217;re on an island for most of the Canaries. You can
 The Canary Islands, a territory of Spain, use the Spanish language.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.ic &amp; .es</h2>
-<p></br><br /></p>
+</br><br />
 </div><div data-original-id="Madeira" data-content-type="roundMarkers" data-content-index="2" class="igm-map-content" id="madeira_231"><h2>Madeira</h2>
 <ul>
 <li> <a href="#1"> Country Flag </a>  </li>
@@ -2553,8 +2273,7 @@ The Canary Islands, a territory of Spain, use the Spanish language.</p>
 Madeira is an Island that is owned by Portugal. While they do have their own flag, you should also be on the lookout for the Portuguese flag.</p>
 <h4 id="2">Capital City:</h4>
 <h2>Funchal</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="3">Most Helpful:</h4>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgIAAABoAQAAAACrzqV0AAAAAnRSTlMAAHaTzTgAAAAeSURBVFjD7cExAQAAAMKg9U9tDQ+gAAAAAAAA4NcAGtAAAfByTE0AAAAASUVORK5CYII=" data-src="https://geotips.net/wp-content/uploads/2020/11/uMR4aYZ.jpg" decoding="async" class="lazyload"><noscript><img src="https://geotips.net/wp-content/uploads/2020/11/uMR4aYZ.jpg" data-eio="l"></noscript><br />
 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Coast-GF.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Coast-GF.jpg" data-eio="l"></noscript><br />
@@ -2589,8 +2308,7 @@ Estreito da Calheta<br />
 Knowing these towns and where they exist on the island can help you decide between the East or the West. Most signs will contain Funchal.</p>
 <h4 id="8">Camera Generation:</h4>
 <h2 style="color:red">Gen 2, 3 and 4</h2>
-<p></br><br />
-</p>
+</br><br/>
 <h4 id="9">Road Lines:</h4>
 <p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Road-Lines.jpg" decoding="async" class="lazyload"><noscript><img src="http://geotips.net/wp-content/uploads/2020/12/Maderia-Road-Lines.jpg" data-eio="l"></noscript><br />
 Madeira, much like Portugal, uses white lines in the middle and on the sides. There doesn&#8217;t have to be a double white line, with some places having a single white line or a dashed line.</p>
@@ -2638,7 +2356,7 @@ The East coast feels a bit more dry and not as lush as other parts of the island
 Madeira uses the Portuguese language.</p>
 <h4 id="18">Domain:</h4>
 <h2 style="color:red">.pt</h2>
-<p></br><br /></p>
+</br><br />
 </div></div><link rel='stylesheet' id='interactive-geo-maps_actions-css' href='https://geotips.net/wp-content/plugins/interactive-geo-maps-premium/assets/public/map-actions/actions.min.css?ver=1.5.6' media='all' />
 <link rel='stylesheet' id='interactive-geo-maps_main-css' href='https://geotips.net/wp-content/plugins/interactive-geo-maps-premium/assets/public/css/styles.min.css?ver=1.5.6' media='all' />
 <link rel='stylesheet' id='e-animations-css' href='https://geotips.net/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.7.2' media='all' />
